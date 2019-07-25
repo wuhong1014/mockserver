@@ -1,0 +1,45 @@
+2019-07-25 10:56:15,183 - mockserver.log - WARNING - content not be dict ,content : {'hello world !'}
+2019-07-25 11:32:56,161 - mockserver.log - WARNING - content not be dict ,content : [{'request': {'contains': 'no=suite001'}}]
+2019-07-25 11:33:20,735 - mockserver.log - WARNING - content not be dict ,content : [{'request': {'contains': 'no=suite001'}}]
+2019-07-25 11:35:27,843 - mockserver.log - WARNING - content not be dict ,content : [{'request': {'contains': 'no=suite001'}}]
+2019-07-25 11:35:33,554 - mockserver.log - WARNING - content not be dict ,content : [{'request': {'contains': 'no=suite001'}}]
+2019-07-25 11:37:18,390 - mockserver.log - WARNING - content not be dict ,content : [{'request': {'contains': 'no=suite001'}}]
+2019-07-25 11:38:14,544 - mockserver.log - WARNING - content not be dict ,content : [{'request': {'contains': 'no=suite001'}}]
+2019-07-25 11:40:30,163 - mockserver.log - WARNING - content not be dict ,content : [{'request': {'contains': 'no=suite001'}}]
+2019-07-25 11:41:16,282 - mockserver.log - WARNING - content not be dict ,content : [{'request': {'contains': 'no=suite001'}}]
+2019-07-25 11:41:53,218 - mockserver.log - WARNING - content not be dict ,content : [{'request': {'contains': 'no=suite001'}}]
+2019-07-25 11:57:23,000 - mockserver.log - WARNING - content not be dict ,content : [{'request': {'contains': 'no=suite001'}}]
+2019-07-25 14:17:51,262 - mockserver.log - WARNING - content not be dict ,content : [{'request': {'contains': 'no=suite001'}}]
+2019-07-25 14:21:52,914 - mockserver.log - WARNING - content not be dict ,content : [{'request': {'contains': 'no=suite001'}}]
+2019-07-25 14:27:04,267 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'POST'}
+2019-07-25 14:27:04,268 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'PUT'}
+2019-07-25 14:27:41,214 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'POST'}
+2019-07-25 14:27:41,215 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'PUT'}
+2019-07-25 14:44:00,735 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'POST'}
+2019-07-25 14:44:00,736 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'PUT'}
+2019-07-25 14:55:02,689 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'POST'}
+2019-07-25 14:55:02,691 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'PUT'}
+2019-07-25 14:59:25,184 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'POST'}
+2019-07-25 14:59:25,186 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'PUT'}
+2019-07-25 15:01:42,310 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'POST'}
+2019-07-25 15:01:42,312 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'PUT'}
+2019-07-25 15:04:14,072 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'POST'}
+2019-07-25 15:04:14,074 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'PUT'}
+2019-07-25 15:05:47,705 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'POST'}
+2019-07-25 15:05:47,706 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'PUT'}
+2019-07-25 15:06:20,099 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'POST'}
+2019-07-25 15:06:20,100 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'PUT'}
+2019-07-25 15:07:28,151 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'POST'}
+2019-07-25 15:07:28,153 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'PUT'}
+2019-07-25 15:10:44,117 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'POST'}
+2019-07-25 15:10:44,120 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'PUT'}
+2019-07-25 15:16:17,083 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'POST'}
+2019-07-25 15:16:17,084 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'PUT'}
+2019-07-25 15:17:26,591 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'POST'}
+2019-07-25 15:17:26,592 - mockserver.log - WARNING - content not be list ,tuple or set ,content : {'method': 'PUT'}
+2019-07-25 15:21:40,275 - mockserver.log - WARNING - content format error ,str only support like  {"contains":"xxx"} or dict(json)only support like {"content.detail.name" : "jone"}
+2019-07-25 15:23:53,327 - mockserver.log - WARNING - content format error ,str only support like  {"contains":"xxx"} or dict(json)only support like {"content.detail.name" : "jone"}
+2019-07-25 15:24:57,461 - mockserver.log - WARNING - content format error ,str only support like  {"contains":"xxx"} or dict(json)only support like {"content.detail.name" : "jone"}
+2019-07-25 15:28:43,537 - mockserver.log - WARNING - content format error ,str only support like  {"contains":"xxx"} or dict(json)only support like {"content.detail.name" : "jone"}
+2019-07-25 15:43:36,979 - mockserver.log - WARNING - content format error ,str only support like  {"contains":"xxx"} or dict(json)only support like {"content.detail.name" : "jone"}
+2019-07-25 15:45:12,738 - mockserver.log - WARNING - content format error ,str only support like  {"contains":"xxx"} or dict(json)only support like {"content.detail.name" : "jone"}

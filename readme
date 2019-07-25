@@ -1,0 +1,24 @@
+#coding:utf-8
+仅支持python3
+1> 安装模块：pip  install -r requirements.txt
+2> 创建项目：django-admin startproject mockserver
+3> 创建app : python manage.py startapp api
+4> 数据库同步迁移 ：1、python manage.py makemigrations  2、python manage.py migrate
+5> 启动服务：python manage.py runserver 0.0.0.0:8888
+6> 路由配置使用django原生admin后台 http://host:port/admin
+7> 规则配置实例：
+
+        request
+
+          1     "url":"/api/operation",
+          2     "method":"any",
+          3     "headers":{"Content-Type":"application/json"},
+          4     "request":[{"contains":"bank_id=123456"}]
+
+
+8> route : mock server
+   url : 支持正则
+   method : any 即匹配所有method
+   headers : {Content-Type:xxx,user-agent:xxx}，支持value的正则匹配
+   request : if str  :request_re  support method  [contains] ,format like : [{contains:xxx},{contains:ccc}]
+             if dict :request_re   support method . format like[{"content.detail.name" : "jone"}，{} ],"content." must be support

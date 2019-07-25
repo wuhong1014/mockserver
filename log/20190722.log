@@ -1,0 +1,2 @@
+2019-07-22 18:24:34,802 - __main__ - INFO - hello world!
+2019-07-22 18:29:36,729 - mockserver.log - ERROR - parse error,content : content.content.detail.name ,error :'NoneType' object has no attribute 'get'
