@@ -20,5 +20,5 @@
    url : 支持正则
    method : any 即匹配所有method
    headers : {Content-Type:xxx,user-agent:xxx}，支持value的正则匹配
-   request : if str  :request_re  support method  [contains] ,format like : [{contains:xxx},{contains:ccc}]
+   request_data(params) : if str  :request_re  support method  [contains] ,format like : [{contains:xxx},{contains:ccc}]
              if dict :request_re   support method . format like[{"content.detail.name" : "jone"}，{} ],"content." must be support
