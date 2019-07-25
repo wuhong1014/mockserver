@@ -1,10 +1,9 @@
-import time
+import time,json
 import requests
 from django.http import HttpResponse
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from api.models import History
-from collections import OrderedDict
 from mockserver import match
 from mockserver.history import organize_history_request, organize_history_response
 from mockserver.match import best_matched, ParserRequestRule
@@ -38,7 +37,12 @@ def forward_proxy(request,proxy):
 def route(request):
     method = request.method
     url = request.path
-    headers = request.META
+    meta = request.META
+    headers={}
+    for k, v in meta.items():
+        if 'wsgi' not  in k :
+            headers[k] = v
+
     params = request.query_params
     data = request.data
     #匹配
@@ -56,10 +60,10 @@ def route(request):
             resp_data=pr.response_data
             if not resp_data:
                 return empty_response()
-            request_info = organize_history_request(url, method, headers, OrderedDict({"params": params, "data": data}))
+            request_info = organize_history_request(url, method, headers, {"params": params, "data": data})
             response_info = organize_history_response(status, resp_headers, resp_data)
             his_id=''.join(('HIS',time.strftime('%Y%m%d%H%M%S',time.localtime())))
-            History.objects.create(id=his_id,rule=rule_info, request_body=request_info, response_body=response_info)
+            History.objects.create(id=his_id,rule=json.dumps(rule_info,ensure_ascii=False), request_body=json.dumps(request_info,ensure_ascii=False), response_body=json.dumps(response_info,ensure_ascii=False))
             return Response(data=resp_data, headers=resp_headers, status=status)
         else:
             resp=forward_proxy(request,proxy)
