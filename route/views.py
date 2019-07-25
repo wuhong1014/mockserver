@@ -39,9 +39,13 @@ def route(request):
     url = request.path
     meta = request.META
     headers={}
-    for k, v in meta.items():
-        if 'wsgi' not  in k :
-            headers[k] = v
+    headers_value=['SERVER_NAME','CONTENT_LENGTH','SERVER_PROTOCOL','REQUEST_METHOD','PATH_INFO','REMOTE_ADDR','QUERY_STRING','CONTENT_TYPE','HTTP_CONNECTION','HTTP_HOST','HTTP_USER_AGENT']
+    for k in meta.keys():
+        if k.upper() in headers_value:
+            if k.upper().startswith('HTTP_'):
+                headers[k.upper().split('HTTP_')[-1]]=meta[k]
+            else :
+                headers[k] = meta[k]
 
     params = request.query_params
     data = request.data
