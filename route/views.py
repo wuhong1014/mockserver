@@ -74,7 +74,7 @@ def route(request):
             return HttpResponse(resp)
     else:
         """不匹配"""
-        return url_not_matched()
+        return not_matched()
 
 def empty_response():
     result = {
@@ -83,7 +83,7 @@ def empty_response():
     }
     return Response(result)
 
-def url_not_matched():
+def not_matched():
     result = {
         "status": 404,
         "msg": "the request not matched,please check!"
