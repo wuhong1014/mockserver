@@ -36,5 +36,4 @@ def is_dict(content):
     else:return content
 
 if __name__=='__main__':
-    content="[1,2,3]"
-    print(json_format_check(content))
+    pass
